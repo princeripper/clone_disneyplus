@@ -1,3 +1,5 @@
+@use 'variaveis';
+
 .faq {
     padding: 5.6vw;
     &__subtitle {
@@ -22,7 +24,7 @@
                         font-size: 16px;
                         line-height: 1.6;
                         margin-bottom: 12px;
-                        color: #c0c0c0;
+                        color: variaveis.$corTextoPrincipal;
                     }
                 }
             }
@@ -78,10 +80,10 @@
     }
 }
             .link__answer {
-                color: #c0c0c0;
+                color: variaveis.$corTextoPrincipal;
 
-                &__hover {
-                    color: #f9f9f9;
+                &:hover {
+                    color: variaveis.$corTextoSecundario;
                     text-decoration: underline;
                 }
             }
