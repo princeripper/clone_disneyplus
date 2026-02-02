@@ -1,0 +1,87 @@
+.faq {
+    padding: 5.6vw;
+    &__subtitle {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    &__questions {
+        &__item {
+            &__answer {
+                ul {
+                    margin-top: 8px;
+                    padding-left: 22px;
+
+                    li {
+                        list-style-type: disc;
+                        font-size: 16px;
+                        line-height: 1.6;
+                        margin-bottom: 12px;
+                        color: #c0c0c0;
+                    }
+                }
+            }
+            background-color: #13151d;
+            margin-bottom: 16px;
+
+            &__question {
+                color: #fff;
+                font-size: 20px;
+                padding: 24px;
+                display: block;
+                cursor: pointer;
+                position: relative;
+
+                &::after {
+                    content: '+';
+                    position: absolute;
+                    top: 0;
+                    right: 24px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 40px;
+                }
+            }
+
+            &__answer {
+                height: 0;
+                overflow: hidden;
+                padding: 0 24px;
+                transition: height, .5s ease;
+            }
+
+            &--is-open {
+                .faq__questions__item__question::after {
+                    content: '-';
+                }
+
+                .faq__questions__item__answer {
+
+                    a {
+                        display: inline-block;
+                        margin-top: 6px;
+                    }
+
+                    height: auto;
+                    padding-top: 8px;
+                    padding-bottom: 24px;
+                    transition: height, .5s ease;
+                }
+            }
+        }
+    }
+}
+            .link__answer {
+                color: #c0c0c0;
+
+                &__hover {
+                    color: #f9f9f9;
+                    text-decoration: underline;
+                }
+            }
